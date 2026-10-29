@@ -41,7 +41,7 @@
       <div class="house-in">
         <div class="tag">VISIÓN<span>inmobiliaria</span></div>
         <p>Déjanos tu teléfono y un asesor te explica cómo usar tu crédito.</p>
-        <form onsubmit="event.preventDefault();this.querySelector('button').textContent='¡Listo!'">
+        <form class="lead-form">
           <input type="tel" placeholder="Tu teléfono" aria-label="Tu teléfono" required>
           <button type="submit">Quiero asesoría</button>
         </form>
@@ -169,7 +169,7 @@
       </div>
       <div class="soc"><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a></div>
     </div>
-    <form class="f" onsubmit="event.preventDefault();this.querySelector('button').textContent='Mensaje enviado'">
+    <form class="f contact-form">
       <div><label for="n">Nombre completo</label><input id="n" type="text" required></div>
       <div><label for="e">Correo electrónico</label><input id="e" type="email" required></div>
       <div><label for="t">Teléfono</label><input id="t" type="tel"></div>

@@ -1,28 +1,31 @@
 # Sandbox Visión Inmobiliaria
 
-Entorno estático de práctica basado en el archivo adjunto “Visión Inmobiliaria — Vive la experiencia”. El archivo `vision-inmobiliaria.html` del workspace permanece sin modificaciones.
+Entorno de práctica estático basado en “Visión Inmobiliaria — Vive la experiencia”. La interfaz usa HTML5, CSS3 y JavaScript vanilla; Node.js ofrece un servidor local sin dependencias externas.
 
 ## Estructura
 
 - `index.html`: página principal del sandbox.
 - `css/styles.css`: estilos extraídos de la maqueta adjunta.
-- `js/main.js`: acceso rápido del chat a la sección de contacto.
+- `js/main.js`: acceso rápido del chat y confirmaciones locales de los formularios.
+- `server.js`: servidor HTTP local implementado con módulos nativos de Node.js.
+- `package.json`: comando de inicio del servidor.
 - `assets/icons/logo.jpg` y `assets/icons/koddy.png`: recursos gráficos locales extraídos del adjunto.
 - `assets/img/`: espacio para imágenes locales. La maqueta conserva sus imágenes de propiedades remotas.
 - `assets/fonts/`: espacio para fuentes locales. Actualmente Outfit y Work Sans se cargan desde Google Fonts.
 - `.vscode/extensions.json`: sugerencias de extensiones para VS Code.
 
-## Abrir en local
+## Ejecutar con Node.js
 
-1. Abre esta carpeta (`sandbox-vision-inmobiliaria`) en VS Code.
-2. Instala la extensión **Live Server** si VS Code la recomienda.
-3. Abre `index.html` y selecciona **Go Live** en la barra de estado.
-4. Live Server abrirá la página en `http://127.0.0.1:5500` o en el siguiente puerto disponible.
+Requiere Node.js 18 o posterior. Desde la raíz del proyecto ejecuta:
 
-También puedes abrir `index.html` directamente en un navegador, aunque Live Server es preferible para recarga automática.
+```bash
+npm start
+```
+
+Abre `http://127.0.0.1:3000`. Para cambiar el puerto, define la variable de entorno `PORT` antes de iniciar el servidor.
 
 ## Pruebas
 
 Usa las herramientas de desarrollador del navegador (`F12`) para inspeccionar la consola, los recursos y los tamaños de escritorio, tablet y móvil. Los formularios solo muestran una confirmación local: no envían datos ni se conectan a un backend.
 
-Las imágenes de propiedades y las fuentes de Google requieren conexión a internet. Puedes reemplazar las imágenes remotas por archivos propios en `assets/img/` y actualizar sus rutas en `index.html`. Los formularios son demostrativos: no envían datos ni se conectan a un backend.
+Las fuentes de Google requieren conexión a internet. Los formularios son demostrativos: no envían datos ni se conectan a un backend.

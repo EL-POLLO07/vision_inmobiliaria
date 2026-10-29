@@ -1,0 +1,9 @@
+{
+  "name": "vision-inmobiliaria-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sandbox estático de Visión Inmobiliaria servido con Node.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
